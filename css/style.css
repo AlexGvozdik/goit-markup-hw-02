@@ -31,19 +31,20 @@ html {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
   margin-left: auto;
   margin-right: auto;
 }
 /* header */
 .header {
   background-color: var(--primary-white-color);
-  padding-top: 24px;
-  padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
 }
 .header > .container {
   display: flex;
   margin-left: auto;
+  /* padding-top: 24px;
+  padding-bottom: 25px; */
 }
 .header-nav {
   display: flex;
@@ -51,8 +52,8 @@ html {
 }
 /* header-logo */
 .hlogo {
-  /* padding-top: 24px;
-  padding-bottom: 25px; */
+  padding-top: 24px;
+  padding-bottom: 25px;
 
   color: var(--title-text-color);
   text-decoration-line: none;
@@ -60,9 +61,11 @@ html {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2px;
+  vertical-align: bottom;
 }
 .hlogo .hlogo-web {
   color: var(--accent-text-color);
+  vertical-align: bottom;
 }
 /* site-nav */
 .site-nav {
@@ -77,11 +80,11 @@ html {
   margin-left: 50px;
 }
 .site-nav .link.current {
-  color: red;
+  color: var(--accent-text-color);
 }
 .site-nav .link {
   padding-top: 24px;
-  padding-bottom: 25px;
+  padding-bottom: 16px;
 
   color: var(--title-text-color);
 
@@ -109,7 +112,7 @@ html {
 }
 .site-contact .link {
   padding-top: 24px;
-  padding-bottom: 25px;
+  padding-bottom: 16px;
 
   color: var(--primary-text-color);
   text-decoration-line: none;
@@ -130,10 +133,10 @@ html {
 .port {
   padding-top: 94px;
   padding-bottom: 94px;
-  background-color: var(--secondary-background-color);
+  background-color: var(--primary-white-color);
 }
 .port .container {
-  background-color: red;
+  background-color: var(--primary-white-color);
 }
 .port-title {
   display: none;
@@ -156,10 +159,17 @@ html {
   line-height: 1.62;
   text-align: center;
 }
+.list.buttons .button:hover,
+.list.buttons .button:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
 .button.title:hover,
 .button:focus {
   background-color: var(--accent-text-color);
   color: var(--primary-white-color);
+  cursor: pointer;
 }
 .icon {
   margin-bottom: 50px;
@@ -167,6 +177,11 @@ html {
 }
 .icon:first-child {
   margin-left: 0;
+}
+.list.infa-cards .port-card:hover,
+.list.infa-cards .port-card:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .list.infa-cards {
   display: flex;
@@ -192,15 +207,20 @@ html {
   /* outline: 2px solid tomato; */
 }
 .port-card .image {
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   display: block;
   max-width: 100%;
   height: auto;
 }
+.port-card .div {
+  padding: 20px 24px;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
 .port .title {
   margin-top: 0;
   margin-bottom: 4px;
-  margin-left: 24px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -210,7 +230,6 @@ html {
 .port .paragraph {
   margin-top: 0;
   margin-bottom: 20px;
-  margin-left: 24px;
   font-size: 16px;
   line-height: 1.87;
 }
@@ -240,6 +259,7 @@ html {
 }
 /* button */
 .primary-button {
+  cursor: pointer;
   padding: 10px 30px;
   display: inline-block;
 
@@ -336,11 +356,13 @@ html {
 /* section our staff */
 .secondary {
   background-color: var(--secondary-background-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
+  /* padding-top: 94px;
+  padding-bottom: 94px; */
 }
 .secondary > .container {
   background-color: red;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .container > .secondary-title {
   margin-top: 0;
@@ -441,6 +463,7 @@ html {
   color: var(--primary-white-color);
   text-decoration-line: none;
 
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
 }
@@ -451,6 +474,8 @@ html {
 .footer-mail {
   color: rgba(255, 255, 255, 0.6);
   text-decoration-line: none;
+
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
 }
@@ -458,6 +483,8 @@ html {
 .footer-tel {
   color: rgba(255, 255, 255, 0.6);
   text-decoration-line: none;
+
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
 }
