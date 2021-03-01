@@ -234,16 +234,12 @@ a.current {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
-  text-align: center;
   background-color: #2f303a;
 }
 .hero .container {
   text-align: center;
 }
 .hero-title {
-  margin-top: 0px;
-  margin-bottom: 30px;
-
   color: var(--primary-white-color);
 
   font-weight: 900;
